@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>App Gestion Etudiant</title>
+    <link rel="stylesheet" href="{% static 'etud/css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">App CRUD pour la Gestion d'Etudiant</h2>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <script src="{% static 'etud/js/bootstrap.js' %}"></script>
+    <script src="{% static 'etud/js/jquery.js' %}"></script>
+    <script src="{% static 'etud/js/popper.js' %}"></script>
+</body>
+</html>
